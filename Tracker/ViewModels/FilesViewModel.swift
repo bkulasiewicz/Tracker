@@ -40,15 +40,11 @@ class FilesViewModel: FilesFeeder {
     }
     
     func loadData() -> Result<[FileCellViewModel], Error> {
-        do {
-            let readFiles = try getGPXFiles()
-            
-            loadedFiles = readFiles
+        let readFiles = getGPXFiles()
         
-            return .success(readFiles.cellViewModel())
-        } catch {
-            return .failure(error)
-        }
+        loadedFiles = readFiles
+    
+        return .success(readFiles.cellViewModel())
     }
     
     func select(at index: Int) {
@@ -70,15 +66,6 @@ extension FilesViewModel {
             .compactMap(gpxReader.read)
             .enumerated()
             .map({GPXFile(fileName: fileNames[$0], content: $1.getFileContent())})
-    }
-}
-
-extension Array where Element == FilesViewModel.GPXFile {
-    func cellViewModel() -> [FileCellViewModel] {
-        map {
-            FileCellViewModel(fileName: $0.fileName,
-                              averageSpeed: "\($0.content.averageSpeed.format2Decimals()) km/h")
-        }
     }
 }
 

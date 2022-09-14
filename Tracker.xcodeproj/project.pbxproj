@@ -13,6 +13,7 @@
 		0E3E35C628D2156300BB187B /* PresentableGPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E35C528D2156300BB187B /* PresentableGPX.swift */; };
 		0E3E35C828D2158B00BB187B /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E35C728D2158B00BB187B /* CLLocationCoordinate2D.swift */; };
 		0E3E35CA28D2163D00BB187B /* FilesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E35C928D2163D00BB187B /* FilesDataSource.swift */; };
+		0E3E35CC28D21E5D00BB187B /* Array + GPXFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E35CB28D21E5D00BB187B /* Array + GPXFile.swift */; };
 		0EEAE27028D0CD8B00F987DF /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE26F28D0CD8B00F987DF /* Double.swift */; };
 		0EEAE27328D0CDB300F987DF /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE27228D0CDB300F987DF /* Converter.swift */; };
 		0EEAE27728D0F87900F987DF /* Observable + PresentableGPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAE27628D0F87900F987DF /* Observable + PresentableGPX.swift */; };
@@ -23,7 +24,6 @@
 		0EF3C3FB28CA4F1D001A1525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3C3F928CA4F1D001A1525 /* Main.storyboard */; };
 		0EF3C3FD28CA4F1E001A1525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3C3FC28CA4F1E001A1525 /* Assets.xcassets */; };
 		0EF3C40028CA4F1E001A1525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3C3FE28CA4F1E001A1525 /* LaunchScreen.storyboard */; };
-		0EF3C40B28CA4F1E001A1525 /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3C40A28CA4F1E001A1525 /* TrackerTests.swift */; };
 		0EF3C42428CA8D40001A1525 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3C42328CA8D40001A1525 /* MapViewController.swift */; };
 		0EF3C42C28CA9395001A1525 /* Party.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3C42928CA9394001A1525 /* Party.gpx */; };
 		0EF3C42D28CA9395001A1525 /* Return from the party.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3C42A28CA9395001A1525 /* Return from the party.gpx */; };
@@ -54,6 +54,7 @@
 		0E3E35C528D2156300BB187B /* PresentableGPX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableGPX.swift; sourceTree = "<group>"; };
 		0E3E35C728D2158B00BB187B /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		0E3E35C928D2163D00BB187B /* FilesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesDataSource.swift; sourceTree = "<group>"; };
+		0E3E35CB28D21E5D00BB187B /* Array + GPXFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + GPXFile.swift"; sourceTree = "<group>"; };
 		0EEAE26F28D0CD8B00F987DF /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		0EEAE27228D0CDB300F987DF /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		0EEAE27628D0F87900F987DF /* Observable + PresentableGPX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable + PresentableGPX.swift"; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		0EF3C3FF28CA4F1E001A1525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EF3C40128CA4F1E001A1525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF3C40628CA4F1E001A1525 /* TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EF3C40A28CA4F1E001A1525 /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
 		0EF3C42328CA8D40001A1525 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0EF3C42928CA9394001A1525 /* Party.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Party.gpx; sourceTree = "<group>"; };
 		0EF3C42A28CA9395001A1525 /* Return from the party.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Return from the party.gpx"; sourceTree = "<group>"; };
@@ -123,6 +123,7 @@
 			children = (
 				0EEAE26F28D0CD8B00F987DF /* Double.swift */,
 				0EEAE27628D0F87900F987DF /* Observable + PresentableGPX.swift */,
+				0E3E35CB28D21E5D00BB187B /* Array + GPXFile.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -165,16 +166,16 @@
 		0EF3C3F228CA4F1D001A1525 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				0EF3C42828CA9387001A1525 /* Data */,
-				0EEAE27128D0CDA300F987DF /* Utils */,
-				0EEAE26E28D0CD7800F987DF /* Extensions */,
-				0EF3C43E28CBA79E001A1525 /* Cells */,
 				0EF3C3F328CA4F1D001A1525 /* AppDelegate.swift */,
 				0EF3C3F528CA4F1D001A1525 /* SceneDelegate.swift */,
+				0EF3C42828CA9387001A1525 /* Data */,
 				0EEAE27B28D0FDE500F987DF /* DataSources */,
 				0EF3C43128CA9AC4001A1525 /* ViewModels */,
 				0EF3C42728CA9218001A1525 /* Controllers */,
 				0EF3C43828CAA342001A1525 /* Coordinators */,
+				0EF3C43E28CBA79E001A1525 /* Cells */,
+				0EEAE27128D0CDA300F987DF /* Utils */,
+				0EEAE26E28D0CD7800F987DF /* Extensions */,
 				0EF3C3F928CA4F1D001A1525 /* Main.storyboard */,
 				0EF3C3FC28CA4F1E001A1525 /* Assets.xcassets */,
 				0EF3C3FE28CA4F1E001A1525 /* LaunchScreen.storyboard */,
@@ -188,7 +189,6 @@
 			children = (
 				0E3E35B828D1055400BB187B /* Data */,
 				0E3E35B528D103F300BB187B /* Extensions */,
-				0EF3C40A28CA4F1E001A1525 /* TrackerTests.swift */,
 				0E3E35BB28D1096300BB187B /* MapViewModelTests.swift */,
 				0EEAE27C28D1026100F987DF /* FilesDataSourceTests.swift */,
 			);
@@ -361,6 +361,7 @@
 				0EF3C43328CA9B1E001A1525 /* FilesViewModel.swift in Sources */,
 				0EF3C43528CA9C01001A1525 /* FilesDataSource.swift in Sources */,
 				0EF3C43728CAA339001A1525 /* MainCoordinator.swift in Sources */,
+				0E3E35CC28D21E5D00BB187B /* Array + GPXFile.swift in Sources */,
 				0EEAE27028D0CD8B00F987DF /* Double.swift in Sources */,
 				0EF3C42428CA8D40001A1525 /* MapViewController.swift in Sources */,
 			);
@@ -374,7 +375,6 @@
 				0E3E35C628D2156300BB187B /* PresentableGPX.swift in Sources */,
 				0E3E35B728D1040500BB187B /* XCTestCase.swift in Sources */,
 				0E3E35C828D2158B00BB187B /* CLLocationCoordinate2D.swift in Sources */,
-				0EF3C40B28CA4F1E001A1525 /* TrackerTests.swift in Sources */,
 				0E3E35CA28D2163D00BB187B /* FilesDataSource.swift in Sources */,
 				0E3E35BC28D1096300BB187B /* MapViewModelTests.swift in Sources */,
 			);
