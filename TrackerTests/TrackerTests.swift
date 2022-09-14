@@ -1,36 +1,47 @@
+////
+////  TrackerTests.swift
+////  TrackerTests
+////
+////  Created by Bartosz Kulasiewicz on 08/09/2022.
+////
 //
-//  TrackerTests.swift
-//  TrackerTests
+//import XCTest
+//@testable import Tracker
 //
-//  Created by Bartosz Kulasiewicz on 08/09/2022.
+//class TrackerTests: XCTestCase {
+//    func test_emptyResult() {
+//        let sut = makeSUT(fileName: "wrong-fileName")
+//       
+//        expectError(sut)
+//    }
+//    
+//    func expectError(_ sut: FilesViewModel) {
+//        switch sut.loadData() {
+//        case let .failure(error):
+//            XCTAssertNotNil(error)
+//            
+//        case let .success(value):
+//            
+//            break
+//            
 //
-
-import XCTest
-@testable import Tracker
-
-class TrackerTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
-}
+//        }
+//    }
+//
+//    func makeSUT(fileName: String) -> FilesViewModel{
+//        let filesDataSource = FilesDataSource(fileNames: [fileName])
+//        let gpxReader = GPXFileReader()
+//        let mapViewModel = MapViewModel()
+//        let sut = FilesViewModel(filesDataSource: filesDataSource,
+//                                 gpxReader: gpxReader,
+//                                 mapCommander: mapViewModel)
+//        
+//        return sut
+//    }
+//}
+//
+////class GPXReaderSpy: GPXReader {
+////    func read(_ data: Data) -> GPXFileReader.GPXData? {
+////        return GPXFileReader.GPXData(coordinates: <#T##[GPXFileReader.GPXData.Coordinate]#>,
+////                                     speed: <#T##[String]#>)    }
+////}
